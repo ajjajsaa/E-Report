@@ -18,6 +18,12 @@
       crossorigin="anonymous"
     />
 
+    <!-- cdn animte css -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+     <!-- cdn AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
     <!-- my css -->
     <link rel="stylesheet" href="assets/style.css"/>
 
@@ -26,7 +32,7 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-primary-subtle py-4">
+    <nav class="animate__animated animate__fadeInDown navbar navbar-expand-lg bg-primary-subtle py-4">
       <div class="container">
         <a class="navbar-brand d-flex align-items-center gap-2" href="#">
           <img
@@ -73,10 +79,8 @@
     <!-- HERO Section -->
     <section id="hero">
       <div class="container">
-        <div
-          class="hero row align-items-center flex-nowrap flex-column flex-lg-row text-center text-lg-start"
-        >
-          <div class="col">
+        <div class="hero row align-items-center flex-nowrap flex-column flex-lg-row text-center text-lg-start overflow-hidden">
+          <div class="col animate__animated animate__fadeInLeft animate__delay-1s">
             <h1 class="fw-bold">
               Selamat Datang di <br /><span class="text-primary">
                 Aplikasi IDN E-Report 2026</span
@@ -93,7 +97,7 @@
               <a class="btn btn-outline-primary" href="">Let's Start</a>
             </div>
           </div>
-          <div class="col d-flex justify-content-center justify-content-lg-end">
+          <div class="col d-flex justify-content-center justify-content-lg-end animate__animated animate__fadeInRight animate__delay-2s">
             <img src="./assets/image/HERO.png" alt="" />
           </div>
         </div>
@@ -105,14 +109,14 @@
       <div class="container">
         <div class="about row">
           <div class="col text-center">
-            <h1 class="fw-bold text-primary mb-4">Tentang Kami</h1>
-            <p class="lh-lg mb-5">
+            <h1 data-aos="fade-up" data-aos-duration="1000" class="fw-bold text-primary mb-4">Tentang Kami</h1>
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="lh-lg mb-5">
               IDN E-Report adalah platform pengaduan digital yang dirancang
               untuk membantu civitas akademika menyampaikan berbagai keluhan,
               mulai dari masalah akademik hingga fasilitas kampus, secara
               anonim dan terpercaya.
             </p>
-            <img src="./assets/image/ABOUT.png" alt="" />
+            <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" src="./assets/image/ABOUT.png" alt="" />
           </div>
         </div>
       </div>
@@ -122,25 +126,25 @@
     <section id="services">
       <div class="container">
         <div>
-          <h1 class="fw-bold text-primary">Layanan Kami</h1>
-          <p class="lh-lg">
+          <h1 data-aos="fade-up" data-aos-duration="1000" class="fw-bold text-primary">Layanan Kami</h1>
+          <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" class="lh-lg">
             Kami menyediakan berbagai kanal pengaduan yang dapat kamu pilih
             sesuai dengan jenis masalah yang kamu hadapi selama berada di
             lingkungan kampus.
           </p>
         </div>
         <div class="row p-4 p-lg-0 gap-3">
-          <div class="col bg-primary-subtle p-4 rounded ">
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" class="col bg-primary-subtle p-4 rounded ">
             <i class="fa-solid fa-graduation-cap"></i>
             <h4 class="fw-semibold">Pengaduan Akademik</h4>
             <p class="lh-lg mt-3">Laporkan kendala perkuliahan, nilai, jadwal, atau masalah akademik lainnya kepada pihak yang berwenang.</p>
           </div>
-          <div class="col bg-primary-subtle p-4 rounded ">
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700" class="col bg-primary-subtle p-4 rounded ">
             <i class="fa-solid fa-screwdriver-wrench"></i>
             <h4 class="fw-semibold">Pengaduan Fasilitas</h4>
             <p class="lh-lg mt-3">Sampaikan keluhan seputar kerusakan atau kekurangan fasilitas kampus agar segera ditindaklanjuti.</p>
           </div>
-          <div class="col bg-primary-subtle p-4 rounded ">
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800" class="col bg-primary-subtle p-4 rounded ">
             <i class="fa-solid fa-user-secret"></i>
             <h4 class="fw-semibold">Pengaduan Anonymous</h4>
             <p class="lh-lg mt-3">Laporkan masalah tanpa khawatir identitas terungkap, identitasmu akan kami jaga kerahasiaannya.</p>
@@ -153,14 +157,14 @@
      <section id="recent">
       <div class="container">
          <div class="text-end mb-5">
-          <h1 class="fw-bold text-primary">Laporan Terbaru</h1>
-          <p class="lh-lg">
+          <h1 data-aos="fade-up" data-aos-duration="1000" class="fw-bold text-primary">Laporan Terbaru</h1>
+          <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" class="lh-lg">
             Berikut adalah beberapa laporan terbaru yang telah masuk dan
             sedang ditindaklanjuti oleh tim kami.
           </p>
         </div>
         <div class="row mb-4">
-          <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800" class="col-12 col-md-6 col-lg-4 mb-4">
             <div class="card">
               <p style="background-color: rgba(0, 0, 0, 0.4);" class="position-absolute text-white px-3 py-2">Akademik</p>
               <img src="./assets/image/kelas kotor.webp" class="card-img-top" alt="...">
@@ -172,7 +176,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700" class="col-12 col-md-6 col-lg-4 mb-4">
             <div class="card">
               <p style="background-color: rgba(0, 0, 0, 0.4);" class="position-absolute text-white px-3 py-2">Anonymous</p>
               <img style="height: 250px; object-fit:cover;" src="./assets/image/MALING.png" class="card-img-top" alt="...">
@@ -184,7 +188,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" class="col-12 col-md-6 col-lg-4 mb-4">
             <div class="card">
               <p style="background-color: rgba(0, 0, 0, 0.4);" class="position-absolute text-white px-3 py-2">Akademik</p>
               <img src="./assets/image/kelas kotor.webp" class="card-img-top" alt="...">
@@ -207,11 +211,11 @@
       <section id="faq">
         <div class="container">
           <div class="row">
-            <h1 class="fw-bold text-primary text-center">FAQ</h1>
-            <p class="text-center">Temukan jawaban atas pertanyaan yang paling sering diajukan seputar layanan pengaduan di IDN E-Report.</p>
+            <h1 data-aos="fade-up" data-aos-duration="1000" class="fw-bold text-primary text-center">FAQ</h1>
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" class="text-center">Temukan jawaban atas pertanyaan yang paling sering diajukan seputar layanan pengaduan di IDN E-Report.</p>
           </div>
           <div class="accordion mt-4" id="acordionExample">
-            <div class="row row-cols-1 row-cols-md-2 g-3">
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" class="row row-cols-1 row-cols-md-2 g-3">
                 <div class="col">
                   <div class="accordion-item">
                     <h2 class="accordion-header">
@@ -343,7 +347,7 @@
         </div>
        </footer>
 
-    <!-- cdn js -->
+    <!-- js Bootsrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -354,5 +358,12 @@
       integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
       crossorigin="anonymous"
     ></script>
+
+    <!-- js AOS -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+     </script>
+     <script>
+      AOS.init();
+     </script>
   </body>
 </html>
