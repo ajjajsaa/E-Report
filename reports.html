@@ -77,13 +77,18 @@
     </nav>
 
     <!-- reports -->
-     <section class="reports">
+    <section class="reports">
         <div class="container">
 
-            <!-- Header -->
-            <div class="text-center">
+            <!-- Judul -->
+            <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center justify-content-lg-between">
+              <div class="col-lg-8 text-center text-lg-start">
                 <h1 class=" fw-bold text-primary-emphasis">Semua laporan</h1>
                 <p class="text-muted lh-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem rerum officia quos repudiandae quibusdam et quidem consequatur aspernatur non inventore ex, iusto neque quam? Nesciunt!</p>
+              </div>
+              <div class="col-lg-2">
+                <button class="btn btn-primary w-100" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-plus"></i> Tambah Laporan</button>
+              </div>
             </div>
 
             <!-- Filter & Search -->
@@ -91,7 +96,7 @@
                 <div class="col-md-4">
                     <input class="form-control shadow-sm" type="text" placeholder="Cari laporan...">
                 </div> 
-                <div class="col-md-3">
+                <div class="col">
                     <select class="form-select">
                         <option value="">Pilih Kategori</option>
                         <option value="">Akademik</option>
@@ -99,7 +104,7 @@
                         <option value="">Anonymous</option>
                     </select>
                 </div>
-                <div class="col-md-3">
+                <div class="col">
                     <select class="form-select">
                         <option value="">Urutkan</option>
                         <option value="">Terbaru</option>
@@ -114,7 +119,7 @@
                 </div>
              </div>
 
-             <!-- reports -->
+             <!-- Recdnt -->
             <div class="row mb-4 mt-5">
                 <div class="col-12 col-md-6 col-lg-4 mb-4">
                     <div class="card">
@@ -237,18 +242,59 @@
                 </ul>
             </nav>
         </div>
-     </section> 
+    </section> 
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h1 class="modal-title fs-5 fw-semibold" id="exampleModalLabel"><i class="fa-solid fa-pen-to-square me-2"></i>Form Tambah Laporan Baru</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <form action="">
+            <div style="padding: 3rem;" class="modal-body">
+              <div class="mb-4">
+                <label class="form-label fw-semibold" for="">Judul Laporan :</label>
+                <input class="form-control" type="text" placeholder="Tulis Judul Laporan">
+              </div>
+              <div class="mb-4">
+                <label class="form-label fw-semibold" for="">Pilih Kategori :</label>
+                <select class="form-select shadow-sm">
+                  <option value="">Pilih Kategori...</option>
+                  <option value="akademik">Akademik</option>
+                  <option value="fasilitas">Fasilitas</option>
+                  <option value="anonymoud">Anonymous</option>
+                </select>
+              </div>
+              <div class="mb-4">
+                <label class="form-label fw-semibold" for="">Isi Laporan :</label>
+                <textarea class="form-control shadow-sm" rows="6" placeholder="Tulis Isi Laporan..."></textarea>
+              </div>
+              <div class="mb-4">
+                <label class="form-label fw-semibold" for="">Upload Gambar :</label>
+                <input class="form-control" type="file" accept="image/*">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="reset" class="btn btn-secondary">Reset</button>
+              <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i>Kirim</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    
     <!-- Footer Section -->
     <footer class="bg-primary py-5">
-        <div class="container">
-          <div class="row justify-content-between row-gap-4 row-gap-md-0">
-            <div class="col-md-4 text-white">
-              <div class="d-flex align-items-center gap-2 mb-2">
-                <img class="rounded" src="./assets/image/Logo.png" width="30" alt="">
-                <h3 class="mb-0 fw-bold">E-Report</h3>
-              </div>
-              <p class="opacity-75 lh-lg mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos reprehenderit unde, nisi placeat accusamus aspernatur!<p>
+      <div class="container">
+        <div class="row justify-content-between row-gap-4 row-gap-md-0">
+          <div class="col-md-4 text-white">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <img class="rounded" src="./assets/image/Logo.png" width="30" alt="">
+              <h3 class="mb-0 fw-bold">E-Report</h3>
+            </div>
+            <p class="opacity-75 lh-lg mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos reprehenderit unde, nisi placeat accusamus aspernatur!<p>
             </div>
             <div class="col-md-2 text-white d-flex flex-column gap-2">
               <h4 class="fw-bold">Menu</h4>
